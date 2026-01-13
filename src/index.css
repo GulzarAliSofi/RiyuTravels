@@ -107,4 +107,17 @@ button{cursor:pointer}
   .hero{padding:2rem}
   .grid{grid-template-columns:1fr}
   .card img{height:180px}
+  /* tighter cards on smaller phones */
+  .card{padding:.75rem}
+  .card h3{font-size:1rem}
+  .card p{font-size:.9rem}
+  /* ensure hero doesn't overshadow content */
+  .hero-slider img{height:220px}
+}
+
+/* Extra small devices */
+@media (max-width:420px){
+  .card img{height:140px}
+  .hero-slider img{height:200px}
+  .page-header__title{font-size:1.1rem}
 }

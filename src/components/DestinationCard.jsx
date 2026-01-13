@@ -9,7 +9,7 @@ export default function DestinationCard({ dest }) {
       aria-label={`View details for ${dest.name}`}
       className="block"
     >
-      <article className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+      <article className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow cursor-pointer h-full">
         <img
           src={dest.image}
           alt={dest.alt || dest.name}
