@@ -121,3 +121,21 @@ button{cursor:pointer}
   .hero-slider img{height:200px}
   .page-header__title{font-size:1.1rem}
 }
+
+/* About and Contact page layouts */
+.about-layout{display:grid;grid-template-columns:1fr 320px;gap:20px}
+.team-grid{display:grid;grid-template-columns:repeat(3, 1fr)}
+
+.contact-layout{display:grid;grid-template-columns:1fr 320px;gap:20px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr}
+
+/* Mobile responsiveness for About and Contact pages */
+@media (max-width:900px){
+  .about-layout{grid-template-columns:1fr}
+  .contact-layout{grid-template-columns:1fr}
+}
+
+@media (max-width:600px){
+  .team-grid{grid-template-columns:repeat(2, 1fr)}
+  .form-grid{grid-template-columns:1fr}
+}

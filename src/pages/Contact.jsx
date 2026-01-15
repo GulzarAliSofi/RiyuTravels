@@ -61,10 +61,7 @@ export default function Contact() {
         subtitle="Get in touch for bookings, questions or custom itineraries."
       />
 
-      <div
-        className="grid"
-        style={{ gridTemplateColumns: "1fr 320px", gap: 20 }}
-      >
+      <div className="contact-layout" style={{ gap: 20 }}>
         <div className="card">
           {!sent ? (
             <form onSubmit={submit} className="space-y-4">
@@ -79,10 +76,7 @@ export default function Contact() {
                 />
               </div>
 
-              <div
-                className="grid"
-                style={{ gridTemplateColumns: "1fr 1fr", gap: 8 }}
-              >
+              <div className="form-grid" style={{ gap: 8 }}>
                 <div>
                   <input
                     aria-label="Email"

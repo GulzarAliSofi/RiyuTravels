@@ -9,10 +9,7 @@ export default function About() {
         subtitle="We design responsible, locally-rooted trips across Jammu & Kashmir — curated for comfort, discovery and authentic connections."
       />
 
-      <div
-        className="grid"
-        style={{ gridTemplateColumns: "1fr 320px", gap: 20 }}
-      >
+      <div className="about-layout" style={{ gap: 20 }}>
         <div>
           <h3 className="text-xl font-semibold">Our mission</h3>
           <p className="text-gray-700 mt-3">
@@ -63,14 +60,7 @@ export default function About() {
           </div>
 
           <h4 className="mt-6 font-semibold">Meet the team</h4>
-          <div
-            className="grid"
-            style={{
-              gridTemplateColumns: "repeat(3, 1fr)",
-              gap: 12,
-              marginTop: 12,
-            }}
-          >
+          <div className="team-grid" style={{ gap: 12, marginTop: 12 }}>
             <div className="card" style={{ textAlign: "center" }}>
               <img
                 src="/assets/images/houseboat.svg"
